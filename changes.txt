@@ -27,6 +27,7 @@ In Templates:
     database.
   - show_accounts.html displays all Accounts that were created. The user will see
     a list of first names, nicknames, and last names. The nicknames are between the
-    first and last names and enclosed within double quotations.
+    first and last names and enclosed within double quotations. Must refresh this
+    page to see the most updated list.
   - about.html has been changed to give a little description about me.
   - The Name of the project has changed from "Project Name" to "Daniel's Flask App"
