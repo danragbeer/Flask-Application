@@ -1,0 +1,36 @@
+This file discusses all files and functions added to the application.
+This application works as intended. The Application code includes comments to
+any lines that I felt made more sense explained in context.
+
+To run application:
+  1. initialize database(i.e. db.create_all())
+  2. python run.py
+
+
+In forms.py:
+  class AccountForm is a new form added to collect first names,
+  last names, nicknames and emails. Each field requires input.
+
+In models.py:
+  class Account is a new model added to insert the AccountForm data into the
+  database.
+
+In views.py:
+  - function add_account_info was added to allow the user to add the
+    AccountForm information. This functions allows the user to add a first name,
+    last name, nickname and email to the database. Once information is added,
+    the application will redirect you to the Show Accounts page. This function will
+    throw an error if the user enters an email that has already been added to the database.
+  - function show_accounts queries all AccountForm information in the database and
+    displays them on the page.
+
+In Templates:
+  - add_account_info.html was created to allow the user an interface to submit
+    their first name, last name, nickname, and email. This page will redirect to
+    an error page if the user enters an email that has already been entered in the
+    database.
+  - show_accounts.html displays all Accounts that were created. The user will see
+    a list of first names, nicknames, and last names. The nicknames are between the
+    first and last names and enclosed within double quotations.
+  - about.html has been changed to give a little description about me.
+  - The Name of the project has changed from "Project Name" to "Daniel's Flask App"
