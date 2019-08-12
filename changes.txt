@@ -2,10 +2,6 @@ This file discusses all files and functions added to the application.
 This application works as intended. The Application code includes comments to
 any lines that I felt made more sense explained in context.
 
-To run application:
-  1. initialize database(i.e. db.create_all())
-  2. python run.py
-
 
 In forms.py:
   class AccountForm is a new form added to collect first names,
